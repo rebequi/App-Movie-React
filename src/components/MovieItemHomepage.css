@@ -1,0 +1,9 @@
+.movie-item-container {
+    display: flex;
+    border: solid black 2px;
+    justify-content: space-around;
+}
+
+.movie-item-image {
+   width:20px 
+}
