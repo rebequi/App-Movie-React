@@ -7,8 +7,8 @@ const NavBar = () => {
           <li>Home</li>
         </Link>
 
-        <Link to="/top-movies">
-          <li>Top Movies</li>
+        <Link to="/latest-movies">
+          <li>Latest Movies</li>
         </Link>
 
         <Link to="/popular-movies">
