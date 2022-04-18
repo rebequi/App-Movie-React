@@ -1,0 +1,12 @@
+.movies-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.movie-card {
+    border: solid black 1px;
+    width: 220px;
+    margin: 10px;
+}

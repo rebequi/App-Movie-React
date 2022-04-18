@@ -1,7 +1,17 @@
+import MoviesPageComponent from "./MoviesPageComponent"
+
+
 const PopularMov = () => {
+
+
   return (
     <div>
-      <h1>Popular Movies</h1>
+      <MoviesPageComponent
+      title_page="Popular Movies"
+      movies = {["popular1", "popular2", "popular3"]}
+      url_page ="popular"
+      />
+      
     </div>
   );
 };

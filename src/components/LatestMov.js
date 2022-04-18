@@ -1,8 +1,14 @@
+import MoviesPageComponent from "./MoviesPageComponent"
+
 const LatestMov = () => {
   return (
-      <div>
-          <h1>Latest Movies</h1>
-      </div>
+    <div>
+    <MoviesPageComponent
+      title_page="Latest Movies"
+      movies = {["nueva1", "nuevs2", "nueva3"]}
+      url_page = "now_playing"
+      />
+  </div>
   )
 }
 
