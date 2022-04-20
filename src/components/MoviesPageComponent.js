@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./MoviesPageComponent.css";
+import MovieCard from "./MovieCard"
 
 const MoviesPageComponent = ({
   title_page,
@@ -21,9 +22,7 @@ const MoviesPageComponent = ({
       <h2> {title_page}</h2>
       <div className="movies-cards-container">
         {films.map((film) => (
-          <div className="movie-card" key={film.id}>
-            {film.title}
-          </div>
+          <MovieCard title={film.title} img={film.poster_path}/>
         ))}
       </div>
 
