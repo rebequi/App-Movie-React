@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/popular-movies" element={<PopularMov />} />
           <Route path="/search" element={<Search />}/>
        </Routes>
+       {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
