@@ -22,7 +22,6 @@ const ListOfMovies = ({ title, url }) => {
       title={movie.title}
       image={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
       link={`${movie.id}`}
-
       />)}  
     </div>
   );

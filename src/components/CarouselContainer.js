@@ -16,7 +16,7 @@ const CarouselContainer = () => {
   return (
       <div className="carousel-container">
         <Carousel fade >
-        {movies.map (movie => <Carousel.Item interval={4000}>
+        {movies.map (movie => <Carousel.Item key="movie.id" interval={4000}>
         
         <img
           className="d-block w-100"
