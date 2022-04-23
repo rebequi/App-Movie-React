@@ -3,19 +3,20 @@ import "./Home.css";
 import ListOfMovies from "./ListOfMovies";
 import MovieItemHomepage from "./MovieItemHomepage";
 
+import { Hidden } from "@mui/material";
 
 const Home = () => {
   return (
     <div>
-        <h1>Home</h1>
-        <CarouselContainer/>
-   
-      
-      <section className="home-movie-list-container">
-        
+      <CarouselContainer />
 
-        <ListOfMovies tittle="Popular Movies" url="popular" />
-        <ListOfMovies tittle="Top Rated Movies" url="top_rated" />
+      <section className="home-movie-list-container">
+       
+          <ListOfMovies title="Popular Movies" url="popular" />
+        
+        
+          <ListOfMovies title="Top Rated Movies" url="top_rated" />
+       
       </section>
     </div>
   );

@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import './ListOfMovies.css'
+import "./ListOfMovies.scss";
 import MovieItemHomepage from "./MovieItemHomepage";
-
+import Box from "@mui/material/Box";
 
 const ListOfMovies = ({ title, url }) => {
-
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -17,12 +16,30 @@ const ListOfMovies = ({ title, url }) => {
 
   return (
     <div className="home-movie-list">
-      <h1>{title}</h1>
-       {movies.map (movie =>    <MovieItemHomepage 
-      title={movie.title}
-      image={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-      link={`${movie.id}`}
-      />)}  
+      <div className="movie-list-title-container">
+        <h3>{title}</h3>
+      </div>
+      
+      <Box
+        sx={{
+          overflow: "scroll",
+          height: 500,
+          width: 600,
+          
+        }}
+      >
+        {movies.map((movie) => (
+          <MovieItemHomepage
+            title={movie.title}
+            image={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
+            link={`movie/{${movie.id}`}
+          />
+        ))}
+      </Box>
+
+      
+
+      
     </div>
   );
 };
