@@ -1,0 +1,19 @@
+.movie-item-container {
+    display: flex;
+    border: solid rgb(150, 150, 150) 1px;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(244, 237, 246);
+    
+}
+
+.movie-item-container:hover {
+  background-color: rgb(225, 181, 225);
+    
+}
+
+
+.movie-item-image {
+   height: 20px;
+   border-radius: 30px;
+}
