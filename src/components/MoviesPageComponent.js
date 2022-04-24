@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import "./MoviesPageComponent.css";
-import MovieCard from "./MovieCard"
+import "./MoviesPageComponent.scss";
+import MovieCard from "./MovieCard";
 
 const MoviesPageComponent = ({
   title_page,
@@ -19,10 +19,17 @@ const MoviesPageComponent = ({
 
   return (
     <div className="movies-component-container">
-      <h2> {title_page}</h2>
+      <div className="movies-component-main-text">
+        <h2> {title_page}</h2>
+      </div>
+
       <div className="movies-cards-container">
         {films.map((film) => (
-          <MovieCard title={film.title} img={film.poster_path}/>
+          <MovieCard
+            title={film.title}
+            img={film.poster_path}
+            link={`movie/{${film.id}`}
+          />
         ))}
       </div>
 
