@@ -4,8 +4,6 @@ import MovieCard from "./MovieCard";
 
 const MoviesPageComponent = ({
   title_page,
-  movies,
-  tittle_movie,
   url_page,
 }) => {
   const [films, setFilms] = useState([]);
@@ -18,8 +16,8 @@ const MoviesPageComponent = ({
   }, []);
 
   return (
-    <div className="movies-component-container">
-      <div className="movies-component-main-text">
+    <div>
+      <div>
         <h2> {title_page}</h2>
       </div>
 
@@ -28,7 +26,8 @@ const MoviesPageComponent = ({
           <MovieCard
             title={film.title}
             img={film.poster_path}
-            link={`movie/{${film.id}`}
+            link= {`/movie/${film.id}`}
+            // {`movie/{${film.id}`}
           />
         ))}
       </div>

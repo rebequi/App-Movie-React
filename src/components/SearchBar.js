@@ -18,6 +18,8 @@ const SearchBar = (title_page) => {
       )
         .then((res) => res.json())
         .then((data) => setMovies(data.results));
+    } else {
+      setMovies([]);
     }
   }, [searchParams]);
 
