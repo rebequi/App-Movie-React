@@ -4,6 +4,7 @@ import Home from './components/Home';
 import LatestMov from './components/LatestMov';
 import PopularMov from './components/PopularMov';
 import Search from './components/Search';
+import Footer from './components/Footer'
 import { Routes, Route, BrowserRouter, Link} from "react-router-dom";
 import "./App.css";
 
@@ -20,7 +21,7 @@ const App = () => {
           <Route path="/popular-movies" element={<PopularMov />} />
           <Route path="/search" element={<Search />}/>
        </Routes>
-       {/* <Footer/> */}
+       <Footer/>
       </BrowserRouter>
     </div>
   );
