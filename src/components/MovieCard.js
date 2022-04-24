@@ -52,12 +52,8 @@ const MovieCard = ({ title, img, link }) => {
             {title}
           </Typography>
           <CardActions>
-         
-        
-            <Button size="small" color="primary" >
-             <a href={link}> <VisibilityIcon/></a>
-             
-             
+            <Button size="small" color="primary">
+              <Link to={link}><VisibilityIcon /></Link>
             </Button>
           </CardActions>
         </CardContent>

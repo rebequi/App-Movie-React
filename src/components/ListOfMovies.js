@@ -32,7 +32,7 @@ const ListOfMovies = ({ title, url }) => {
           <MovieItemHomepage
             title={movie.title}
             image={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-            link={`movie/{${movie.id}`}
+            link={`movie/${movie.id}`}
           />
         ))}
       </Box>
