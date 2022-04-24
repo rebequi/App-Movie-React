@@ -1,9 +1,12 @@
 .movie-item-container {
     display: flex;
-    border: solid rgb(150, 150, 150) 1px;
-    justify-content: space-around;
+    border: solid rgb(200, 200, 200) 0.2px;
+    justify-content: space-between;
     padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: rgb(244, 237, 246);
+    color: rgb(80, 68, 98);
     
 }
 

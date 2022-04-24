@@ -1,7 +1,7 @@
 
 
 .home-movie-list {
-    border: solid rgb(166, 157, 157) 1px;
+    border: solid rgb(166, 157, 157) 0.5px;
 
     
 }
@@ -9,5 +9,9 @@
     background-color: rgb(127, 148, 255);
     text-align: center;
     padding: 10px;
+    h3 {
+        color: white;
+        font-size: 20px;
+    }
 }
 
