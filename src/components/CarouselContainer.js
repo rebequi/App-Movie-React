@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { useState, useEffect } from "react";
 import Button from '@mui/material/Button';
 
+
 const CarouselContainer = () => {
   const [movies, setMovies] = useState([]);
 
@@ -27,7 +28,7 @@ const CarouselContainer = () => {
             <Carousel.Caption>
               <h5>{movie.title}</h5>
               <p>{movie.overview}</p>
-              <Button variant="contained" href={`movie/{${movie.id}`}>
+              <Button variant="contained" href={`movie/${movie.id}`}>
                 See more...
               </Button>
             </Carousel.Caption>
