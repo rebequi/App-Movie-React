@@ -6,7 +6,7 @@ import Search from './components/Search';
 import Footer from './components/Footer'
 import Movie from './components/Movie'
 
-import { Routes, Route, BrowserRouter, Link} from "react-router-dom";
+import { Routes, Route, BrowserRouter,} from "react-router-dom";
 import "./App.css";
 
 
