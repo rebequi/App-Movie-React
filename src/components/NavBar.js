@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { AppBar, styled , Toolbar, Typography } from "@mui/material";
-import "./NavBar.css"
+import "./NavBar.scss"
+import { Movie } from "@mui/icons-material";
+
 
 
 
@@ -12,8 +14,11 @@ const StyledToolBar = styled(Toolbar) ({
 
 const NavBar = () => {
   return (
-    <AppBar position="static" color="secondary">
+    <AppBar position="static" style={{
+      backgroundColor:'black'
+    }}>
       <StyledToolBar>
+        <Movie sx={{color:'white'}}></Movie>
       <Toolbar>
         <Typography>
          
@@ -22,17 +27,17 @@ const NavBar = () => {
           </Link>
         </Typography>
         <Typography>
-          <Link to="/latest-movies">
+          <Link to="/latest-movies" className="link-style">
            Latest Movies
           </Link>
         </Typography>
         <Typography>
-          <Link to="/popular-movies">
+          <Link to="/popular-movies" className="link-style">
            Popular Movies
           </Link>
         </Typography>
         <Typography>
-          <Link to="/search">
+          <Link to="/search" className="link-style">
             Search
           </Link>
         </Typography>

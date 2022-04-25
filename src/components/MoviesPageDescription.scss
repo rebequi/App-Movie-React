@@ -1,0 +1,23 @@
+.movie-description-container {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  color: white;
+
+  .movie-info-container {
+      display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    .movie-info-description{
+    
+        width: 500px;
+        margin-left: 50px;
+    }
+    
+  }
+}
+

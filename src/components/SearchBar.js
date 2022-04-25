@@ -31,7 +31,7 @@ const SearchBar = (title_page) => {
 
   return (
     <div>
-      <div class="search-movie-container">
+      <div className="search-movie-container">
         <h2>Search your movie</h2>
         <div>
         <TextField sx={{
@@ -60,7 +60,7 @@ const SearchBar = (title_page) => {
               title={movie.title}
               img={movie.poster_path}
               key={movie.id}
-              link={`movie/{${movie.id}`}
+              link={`movie/${movie.id}`}
             />
           ))
         )}

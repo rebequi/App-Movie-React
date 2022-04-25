@@ -3,6 +3,7 @@ import "./ListOfMovies.scss";
 import MovieItemHomepage from "./MovieItemHomepage";
 import Box from "@mui/material/Box";
 
+
 const ListOfMovies = ({ title, url }) => {
   const [movies, setMovies] = useState([]);
 
@@ -36,6 +37,8 @@ const ListOfMovies = ({ title, url }) => {
           />
         ))}
       </Box>
+
+     
 
       
 
