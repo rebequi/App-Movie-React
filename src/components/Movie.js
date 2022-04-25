@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import MoviesPageDescription from "./MoviesPageDescription";
 
-const Movie = ({ title_page, movie_id }) => {
+const Movie = ({ }) => {
   const [movies, setMovies] = useState([]);
   let params = useParams();
 

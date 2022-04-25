@@ -1,7 +1,7 @@
 import CarouselContainer from "./CarouselContainer";
 import "./Home.css";
 import ListOfMovies from "./ListOfMovies";
-import MovieItemHomepage from "./MovieItemHomepage";
+
 
 
 const Home = () => {

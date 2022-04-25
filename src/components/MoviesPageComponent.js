@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./MoviesPageComponent.scss";
 import MovieCard from "./MovieCard";
 import ReactPaginate from "react-paginate";
-import { Pagination } from "react-bootstrap";
+
 
 
 const MoviesPageComponent = ({

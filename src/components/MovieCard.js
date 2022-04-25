@@ -3,7 +3,6 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Icon,
   Typography,
 } from "@mui/material";
 import { typography } from "@mui/system";
